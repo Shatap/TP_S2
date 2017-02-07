@@ -1,0 +1,22 @@
+
+#include "Base.h"
+
+using namespace std;
+
+
+
+
+int Base::ajouter(const string &sujet, const string &verbe, const string &complement)
+{
+    Fait f{sujet,verbe,complement} ;
+    ajoutZer.push_back(f);
+
+}
+
+int Base::selectionner(const string &sujet, const string &verbe, const string &complement)
+{
+    for (std::vector<Fait>::iterator it = ajoutZer.begin(); it != ajouteZer.end(); ++it)
+    {
+        if ((sujet == ajoutZer.at(it) || sujet ="*")&&(verbe==ajoutZer.at(it))
+    }
+}
