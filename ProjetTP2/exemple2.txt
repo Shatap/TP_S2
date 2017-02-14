@@ -1,0 +1,10 @@
+endroit senat Le Sénat
+endroit chateau  Château Du Manoir
+endroit piscine  Piscine des Canards
+relier senat chateau
+relier chateau piscine
+personnage nicodeme  senat Nicodème le Grand
+personnage marcel    senat Marcel Durand
+personnage philomene chateau Philomène Lepouic
+joueur marcel
+fin

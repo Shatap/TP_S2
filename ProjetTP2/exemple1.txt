@@ -1,0 +1,7 @@
+endroit senat Le Sénat
+endroit chateau  Château Du Manoir
+endroit piscine  Piscine des Canards
+relier senat chateau
+relier chateau piscine
+position chateau
+fin
