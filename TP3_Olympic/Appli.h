@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "CircleSh.h"
+#include "cadrillage.h"
 #include <vector>
 #include <iostream>
 
@@ -17,6 +18,7 @@ private:
     sf::RenderWindow m_window;
     bool             m_appli_running;
     Circlesh m_anneau;
+    Cadrillage _cadri;
     std::vector<Circlesh> m_anneaux;
     sf::Vector2f m_mouse;          // position de la souris
     sf::Mouse::Button m_button;    // numéro bouton appuyé/relâché

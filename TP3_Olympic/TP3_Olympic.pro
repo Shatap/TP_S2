@@ -5,7 +5,8 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     Appli.cpp \ 
-    CircleSh.cpp
+    CircleSh.cpp \
+    cadrillage.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -15,4 +16,5 @@ LIBS           += -lsfml-graphics -lsfml-window -lsfml-system
 
 HEADERS += \
     Appli.h \ 
-    CircleSh.h
+    CircleSh.h \
+    cadrillage.h

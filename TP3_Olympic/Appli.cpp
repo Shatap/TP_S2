@@ -1,6 +1,6 @@
 #include "Appli.h"
 
-Appli::Appli():m_anneaux{{{200,200},sf::Color::Blue},{{400,180},sf::Color::Yellow},{{600,220},sf::Color::Black},{{800,180},sf::Color::Green},{{1000,200},sf::Color::Red}}
+Appli::Appli():m_anneaux{{{200,200},sf::Color::Blue},{{400,180},sf::Color::Yellow},{{600,220},sf::Color::Black},{{800,180},sf::Color::Green},{{1000,200},sf::Color::Red}},_cadri({9,9})
 {
 
 }
@@ -14,11 +14,17 @@ Appli::Appli():m_anneaux{{{200,200},sf::Color::Blue},{{400,180},sf::Color::Yello
 void Appli::draw() {
     m_window.clear(sf::Color::White); // vert olive
 
-    for(float i=0;i<m_anneaux.size();i++)
+    /*for(float i=0;i<m_anneaux.size();i++)
     {
         m_anneaux[i].draw_on(m_window);
 
-    }
+    }*/
+
+
+
+    _cadri.draw_cad(m_window);
+
+
 
 
 
