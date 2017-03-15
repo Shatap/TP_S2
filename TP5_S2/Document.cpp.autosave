@@ -1,0 +1,6 @@
+#include "Document.h"
+
+Document::Document(std::string doc)
+{
+m_root = new Element(doc);
+}

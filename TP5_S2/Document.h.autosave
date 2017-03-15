@@ -1,0 +1,20 @@
+#ifndef DOCUMENT_H
+#define DOCUMENT_H
+#include "Element.h"
+
+class Document{
+
+private:
+    Element *m_root;
+
+
+public:
+    Document(std::string doc);
+    void addNode(Element *e);
+
+
+
+
+};
+#endif // DOCUMENT_H
+
