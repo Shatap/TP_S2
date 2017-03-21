@@ -2,10 +2,16 @@
 
 Document::Document(std::string doc)
 {
-Element  *e= new Element(doc);
+    m_root = new Element(doc);
 }
 
-void Document::addNode(Element *e)
+std::string Document::asXML() const
 {
-    e = _root;
+    return m_root->asXML();
 }
+
+Element *Document::root()
+{
+    return m_root;
+}
+

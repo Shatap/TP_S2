@@ -5,13 +5,14 @@
 class Document{
 
 private:
-    Element *_root;
+    Element *m_root;
 
 
 public:
     Document(std::string doc);
-    void addNode(Element *e);
-
+    void addNode(Node *e);
+    std::string asXML()const;
+    Element * root();
 
 
 

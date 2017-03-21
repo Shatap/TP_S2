@@ -5,10 +5,14 @@
 class Text:public Node{
 
 private:
-    std::string _string;
+    std::string m_string;
 
 public:
-    Text(std::string);
+    ~Text();
+    Text(std::string string);
+     std::string asXML() const  {return m_string;}
+     Node * clone()const  override;
+
 };
 
 #endif // TEXT_H

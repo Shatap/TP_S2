@@ -7,13 +7,15 @@
 
 class Element:public Node{
 private:
-    std::string _tag;
-    std::vector<Node *> _childreun;
+    std::string m_tag;
+    std::vector<Node *> m_childreun;
 
 public:
-
+    ~Element();
     Element(std::string);
-
+    std::string asXML() const override;
+    void addNode(Node *);
+    Node *clone() const override;
 
 };
 
