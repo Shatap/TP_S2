@@ -6,6 +6,7 @@ class Figure
 {
 public:
     Figure();
+    virtual void afficher()=0;
 };
 
 #endif // FIGURE_H

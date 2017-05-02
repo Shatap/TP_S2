@@ -13,7 +13,7 @@ public:
     FigureComposee();
     Rond &ajouter_rond(int x,int y,std::string couleur,int cote);
     Carre &ajouter_carre(int x,int y,std::string couleur,int rayon);
-
+    FigureComposee & ajouter_figure_composee();
 
 };
 
