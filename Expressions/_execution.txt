@@ -1,0 +1,50 @@
+
+
+
+COMPTE RENDU D'EXECUTION DU PROGRAMME
+
+
+---------------------------------------------------
+
+
+* Test TokenReader 
+- résultat attendu : OK
+- chaine           : 12 43 5
+-> 12
+-> 43
+-> 5
+
+* Test TokenReader 
+- résultat attendu : OK
+- chaine           : 12 + 43 - 5
+-> 12
+-> +
+-> 43
+-> -
+-> 5
+
+* Test TokenReader 
+- résultat attendu : OK
+- chaine           : abc123  + toto
+-> abc123
+-> +
+-> toto
+
+* Test TokenReader 
+- résultat attendu : Erreur lettre après un nombre
+- chaine           : 123abc
+[ERR] Caractère inattendu position 3
+- reste à lire     : ___abc
+
+* Test Evaluator 
+- résultat attendu : valeur = 123
+- chaine           :   123 
+resultat = 123
+* Test Evaluator 
+- résultat attendu : valeur = 168
+- chaine           :   123 + 45 
+resultat = 168
+* Test Evaluator 
+- résultat attendu : valeur = 162
+- chaine           :   123 + 45 - 6
+resultat = 162
